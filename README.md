@@ -8,7 +8,7 @@ https://jcalderon100.github.io/Paradise/
 
 
 ## Portada
-![App Screenshot]()
+![App Screenshot](https://github.com/jcalderon100/Paradise/blob/main/assets/img/heroparadise.png?raw=true)
 
 
 ## 🛠 Skills

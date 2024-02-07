@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <title>Paradise Mazatlán | Trimaran</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Paradise - Trimaran, Mazatlán, Yate, Sinaloa">
+    <meta name="keywords" content="Paradise trimaran, Mazatlán, Yate, Playa, Trimaran, Tres islas, Renta de yates Mazatlan, 
+    paseo en yate, Puerto de Mazatlán, Vacaciones">
+    <meta name= "author" content="Paradise Trimaran Mazatlán">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/paradise/FAVICON.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/paradise/FAVICON.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/paradise/FAVICON.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/paradise/FAVICON.png" color="#6366f1">
+    <link rel="shortcut icon" href="assets/img/paradise/FAVICON.png">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+          
+
+
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img src="assets/img/paradise/LOGO PARADISE TRSN.png" width="50" alt="paradise">
+            
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="#hero" class="nav-link" data-bs-toggle="dropdown" aria-current="page">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#services" class="nav-link"
+                  aria-current="page">Servicios</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#gallery" class="nav-link" data-bs-toggle="dropdown" aria-current="page">Galeria</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#info" class="nav-link" data-bs-toggle="dropdown" aria-current="page">Información</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#info" class="nav-link" data-bs-toggle="dropdown" aria-current="page">Preguntas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#location" class="nav-link" data-bs-toggle="dropdown" aria-current="page">Ubicación</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="#contact" class="btn btn-success w-100" target="_blank" rel="noopener">
+                <i class='bx bx-phone-call'></i>
+                &nbsp;Reservar
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a href="#contact" class="btn btn-success shadow-success btn-sm fs-sm rounded d-none d-lg-inline-flex" rel="noopener">
+            Reservar
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero slider + BG parallax -->
+      <section id="hero" class="jarallax bg-dark py-xxl-5" data-jarallax data-speed="0.4" data-bs-theme="dark">
+        <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent"></span>
+        <div class="jarallax-img" style="background-image: url(assets/img/paradise/img/hero2.png);"></div>
+        <div class="position-relative text-center zindex-5 overflow-hidden pt-4 py-md-5">
+
+          <!-- Slider controls (Prev / next) -->
+          <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2" aria-label="Previous">
+            <i class="bx bx-chevron-left fs-1"></i>
+          </button>
+          <button type="button" id="hero-next" class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2" aria-label="Next">
+            <i class="bx bx-chevron-right fs-1"></i>
+          </button>
+
+          <!-- Slider -->
+          <div class="container text-center py-xl-5">
+            <div class="row justify-content-center pt-lg-5">
+              <div class="col-xl-8 col-lg-9 col-md-10 col-11">
+                <div class="swiper pt-5 pb-4 py-md-5" data-swiper-options='{
+                  "effect": "fade",
+                  "speed": 500,
+                  "autoplay": {
+                    "delay": 5500,
+                    "disableOnInteraction": false
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "prevEl": "#hero-prev",
+                    "nextEl": "#hero-next"
+                  }
+                }'>
+                  <div class="swiper-wrapper">
+
+                    <!-- Item -->
+                    <div class="swiper-slide">
+                      <h2 class="display-2 from-start mb-lg-4">Vive las Mejores Experiencias</h2>
+                      <div class="from-end">
+                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">No pierdas la oportunidad de vivir esta experiencia única. unete a nosotros para un emocionante viaje.</p>
+                      </div>
+                      <div class="scale-up delay-1">
+                        <a href="#contact" class="btn btn-success shadow-success btn-lg">Reservar ahora</a>
+                      </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide">
+                      <h2 class="display-2 from-start mb-lg-4">Disfruta grandes momentos y</h2>
+                      <div class="from-end">
+                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Te esperamos a bordo para crear recuerdos inolvidables juntos.</p>
+                      </div>
+                      <div class="scale-up delay-1">
+                        <a href="#contact" class="btn btn-danger shadow-danger btn-lg">Reservar ahora</a>
+                      </div>
+
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide">
+                      <h2 class="display-2 from-start mb-lg-4">Paradise Trimaran</h2>
+                      <div class="from-end">
+                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5"> Queremos ser formar parte de los mejores momentos con tu amigos y seres queridos .</p>
+                      </div>
+                      <div class="scale-up delay-1">
+                        <a href="#contact" class="btn btn-info shadow-info btn-lg">Reservar Ahora</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pagination (bullets) -->
+                  <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
+          <div class="d-flex mb-4 mb-sm-0">
+            <a href="https://wa.link/ryg754" class="btn btn-icon btn-secondary btn-whatsapp rounded-circle me-2" target="_blank" aria-label="Whatsapp">
+              <i class="bx bxl-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100070095075479" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2" target="_blank" aria-label="Facebook">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/paradisetrimaran/" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-2" target="_blank" aria-label="Instagram">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="mailto:atencion@paradise.com.mx" class="btn btn-icon btn-secondary btn-google rounded-circle me-2" aria-label="gmail">
+              <i class="bx bxl-gmail"></i>
+            </a>
+            <a href="tel:+526691160244" class="btn btn-icon btn-secondary btn-whatsapp rounded-circle me-2" target="_blank" aria-label="Phone">
+              <i class="bx bx-phone"></i>
+            </a>
+          </div>
+          <a href="#services" class="nav-link px-0">
+            Ver mas
+            <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="container mb-5 pt-lg-5" id="benefits">
+        <div class="swiper pt-3" data-swiper-options='{
+          "slidesPerView": 1,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 2
+            },
+            "991": {
+              "slidesPerView": 3
+            }
+          }
+        }'>
+          <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide border-end-lg px-2">
+              <div class="text-center">
+                <img src="assets/img/paradise/img/icons/1.png" width="48" alt="Bulb icon" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">Salidas todos los días</h4>
+                <p class="mx-auto" style="max-width: 336px;">Salidas de 9:00 am a 1:00 pm  y de 2:00 pm a 7:00, 📍Muelle 9, Marina Mazatlán</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide border-end-lg px-2">
+              <div class="text-center">
+                <img src="assets/img/paradise/img/icons/2.png" width="48" alt="Award icon" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">Tripulación capacitada</h4>
+                <p class="mx-auto" style="max-width: 336px;">Contamos con personal calificado 👨🏻‍✈️ que te brindara apoyó cuando lo requieras.</p>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide px-2">
+              <div class="text-center">
+                <img src="assets/img/paradise/img/icons/3.png" width="48" alt="Team icon" class="d-block mb-4 mx-auto">
+                <h4 class="mb-2 pb-1">Equipo de seguridad</h4>
+                <p class="mx-auto" style="max-width: 336px;">
+                  contamos con equipos de protección 🛟 para que tu paseo sea de lo mas seguro.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination (bullets) -->
+          <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4"></div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="container pb-2 mb-2 mb-md-4 mb-lg-5">
+        <div class="row pb-lg-3">
+
+          <!-- Item -->
+          <div class="col-md-5 mb-2">
+            <div class="card card-portfolio">
+              <div class="card-img">
+                <img src="assets/img/paradise/img/Cuadrado/9.png" alt="Image">
+              </div>
+              <div class="card-body">
+                <h2 class="h4 mb-2">
+                  <a href="#" class="stretched-link">Tapete flotante</a>
+                </h2>
+                <div class="card-portfolio-meta">
+                  <span class="text-muted">Relajate y disfruta de la tranquilidad de playa venados con nuestro tapete flotante</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-md-7 mb-2">
+            <div class="card card-portfolio">
+              <div class="card-img">
+                <img src="assets/img/paradise/img/services/a2.png" alt="Image">
+              </div>
+              <div class="card-body">
+                <h2 class="h4 mb-2">
+                  <a href="#" class="stretched-link">Paseo Familiar</a>
+                </h2>
+                <div class="card-portfolio-meta pb-1">
+                  <span class="text-muted">Deja que los peques se diviertan en una de las playas mas tranquilas del puerto, claro usando sus equipo salvavidas.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-md-7 mb-2">
+            <div class="card card-portfolio">
+              <div class="card-img">
+                <img src="assets/img/paradise/img/Horizontal/3.png" alt="Image">
+              </div>
+              <div class="card-body">
+                <h2 class="h4 mb-2">
+                  <a href="#" class="stretched-link">Disfruta del mar</a>
+                </h2>
+                <div class="card-portfolio-meta">
+                  <span class="text-muted">Echate un chapuzón y disfruta de la tranquilidad de playa venados</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-md-5 mb-2">
+            <div class="card card-portfolio">
+              <div class="card-img">
+                <img src="assets/img/paradise/img/Cuadrado/3.png" alt="Image">
+              </div>
+              <div class="card-body">
+                <h2 class="h4 mb-2">
+                  <a href="#" class="stretched-link">Snorkel</a>
+                </h2>
+                <div class="card-portfolio-meta">
+                  <span class="text-muted">Contempla la fauna marina en playa venados</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-md-5 mb-2">
+            <div class="card card-portfolio">
+              <div class="card-img">
+                <img src="assets/img/paradise/img/Cuadrado/5.png" alt="Image">
+              </div>
+              <div class="card-body">
+                <h2 class="h4 mb-2">
+                  <a href="#" class="stretched-link">Despedidas de Soltera</a>
+                </h2>
+                <div class="card-portfolio-meta">
+                  <span class="text-muted">Ven y festeja con tus amigas de increibles momentos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-md-7 mb-2">
+            <div class="card card-portfolio">
+              <div class="card-img">
+                <img src="assets/img/paradise/img/Horizontal/7.png" alt="Image">
+              </div>
+              <div class="card-body">
+                <h2 class="h4 mb-2">
+                  <a href="#" class="stretched-link">Cumpleaños</a>
+                </h2>
+                <div class="card-portfolio-meta">
+                  <span class="text-muted">Ven y celebra tu cumple y vive las mejores experiencias con tus amigos con los hermosos atardeceres que el puerto de mazatlán tiene para ti</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Gallery  -->
+      <section id="gallery" class="mb-5 pt-md-3 pt-lg-4 pt-xl-5">
+        <h2 class="h1 pt-lg-2 pt-xl-3 mb-5 text-center"></h2>
+        <div class="pb-2 pb-sm-3 pb-md-4">
+
+          <!-- LTR -->
+          <div class="swiper" data-swiper-options='{
+            "loop": true,
+            "grabCursor": false,
+            "centeredSlides": true,
+            "autoplay": {
+              "delay": 0,
+              "disableOnInteraction": false
+            },
+            "freeMode": true,
+            "speed": 38000,
+            "freeModeMomentum": false,
+            "breakpoints": {
+              "0": {
+                "slidesPerView": 1,
+                "spaceBetween": 8
+              },
+              "500": {
+                "spaceBetween": 16
+              },
+              "768": {
+                "slidesPerView": 3,
+                "spaceBetween": 24
+              }
+            }
+          }'>
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Cuadrado/4.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Cuadrado/7.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Cuadrado/5.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Cuadrado/10.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Cuadrado/6.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+
+            </div>
+          </div>
+
+          <!-- RTL -->
+          <div class="swiper mt-md-4 mt-sm-3 mt-2" dir="rtl" data-swiper-options='{
+            "loop": true,
+            "grabCursor": false,
+            "centeredSlides": true,
+            "autoplay": {
+              "delay": 0,
+              "disableOnInteraction": false
+            },
+            "freeMode": true,
+            "speed": 38000,
+            "freeModeMomentum": false,
+            "breakpoints": {
+              "0": {
+                "slidesPerView": 1,
+                "spaceBetween": 8
+              },
+              "500": {
+                "spaceBetween": 16
+              },
+              "768": {
+                "slidesPerView": 2,
+                "spaceBetween": 24
+              }
+            }
+          }'>
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Horizontal/6.png" alt="Gallery image" class="rounded-3">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Horizontal/7.png" alt="Gallery image" class="rounded-3">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Horizontal/4.png" alt="Gallery image" class="rounded-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feactures -->
+      <section id="info" class="container mb-5 pt-md-2 pt-lg-4 pt-xl-5">
+          <h2 class="h1 my-4 pt-2 text-center">Información general</h2>
+          <div class="row pb-4">
+            <div class="col-md-3 col-6 order-md-1 order-2">
+              <div class="d-flex flex-column justify-content-between h-100 text-center">
+  
+                <!-- Item -->
+                <div class="mt-md-5 mt-4">
+                  <img src="assets/img/paradise/img/icons2/4.png" alt="Icon" class="d-inline-block mb-4">
+                  <h3 class="h4 mb-0 lh-1">
+                    <span class="d-block mb-2 fs-base fw-normal">Duracion por paseo</span>
+                    5 horas
+                  </h3>
+                </div>
+  
+                <!-- Item -->
+                <div class="mt-md-5 mt-4">
+                  <img src="assets/img/paradise/img/icons2/5.png" alt="Icon" class="d-inline-block mb-4">
+                  <h3 class="h4 mb-0 lh-1">
+                    <span class="d-block mb-2 fs-base fw-normal">Precio por paseo</span>
+                    $9,000 mxn
+                  </h3>
+                </div>
+  
+                <!-- Item -->
+                <div class="mt-md-5 mt-4">
+                  <img src="assets/img/paradise/img/icons2/6.png" alt="Icon" class="d-inline-block mb-4">
+                  <h3 class="h4 mb-0 lh-1">
+                    <span class="d-block mb-2 fs-base fw-normal">Capacidad Maxima</span>
+                    25 personas
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 order-md-2 order-1">
+              <div class="d-flex flex-column justify-content-between h-100">
+  
+                <!-- Image -->
+                <div class="mx-md-n5 mb-md-n5">
+                  <img src="assets/img/paradise/img/Boat.png" alt="Image">
+                </div>
+  
+                <!-- Items row -->
+                <div class="row row-cols-2 mt-md-5 mt-4 text-center">
+  
+                  <!-- Item -->
+                  <div class="col">
+                    <img src="assets/img/paradise/img/icons2/7.png" alt="Icon" class="d-inline-block mb-4">
+                    <h3 class="h4 mb-0 lh-1">
+                      <span class="d-block mb-2 fs-base fw-normal">Horas de Salida</span>
+                        9:00 am | 2:00 pm 
+                        
+                    </h3>
+                  </div>
+  
+                  <!-- Item -->
+                  <div class="col">
+                    <img src="assets/img/paradise/img/icons2/8.png" alt="Icon" class="d-inline-block mb-4">
+                    <h3 class="h4 mb-0 lh-1">
+                      <span class="d-block mb-2 fs-base fw-normal">Equipo</span>
+                      2 Kayacs | 1 Tapete Flot.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 order-md-3 order-3">
+              <div class="d-flex flex-column justify-content-between h-100 text-center">
+  
+                <!-- Item -->
+                <div class="mt-md-5 mt-4">
+                  <img src="assets/img/paradise/img/icons2/11.png" alt="Icon" class="d-inline-block mb-4">
+                  <h3 class="h4 mb-0 lh-1">
+                    <span class="d-block mb-2 fs-base fw-normal">Tipo de Embarcación</span>
+                    Trimaran
+                  </h3>
+                </div>
+  
+                <!-- Item -->
+                <div class="mt-md-5 mt-4">
+                  <img src="assets/img/paradise/img/icons2/10.png" alt="Icon" class="d-inline-block mb-4">
+                  <h3 class="h4 mb-0 lh-1">
+                    <span class="d-block mb-2 fs-base fw-normal">Recamaras y baños</span>
+                    1 Rec. 2 Bañ.
+                  </h3>
+                </div>
+  
+                <!-- Item -->
+                <div class="mt-md-5 mt-4">
+                  <img src="assets/img/paradise/img/icons2/9.png" alt="Icon" class="d-inline-block mb-4">
+                  <h3 class="h4 mb-0 lh-1">
+                    <span class="d-block mb-2 fs-base fw-normal">Equipo de Audio</span>
+                    1 Bocina | Bluetooth
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Gallery boat  -->
+      <section class="mb-5 pt-md-3 pt-lg-4 pt-xl-5">
+        <h2 class="h1 pt-lg-2 pt-xl-3 mb-5 text-center"></h2>
+        <div class="pb-2 pb-sm-3 pb-md-4">
+
+          <!-- LTR -->
+          <div class="swiper" data-swiper-options='{
+            "loop": true,
+            "grabCursor": false,
+            "centeredSlides": true,
+            "autoplay": {
+              "delay": 0,
+              "disableOnInteraction": false
+            },
+            "freeMode": true,
+            "speed": 38000,
+            "freeModeMomentum": false,
+            "breakpoints": {
+              "0": {
+                "slidesPerView": 1,
+                "spaceBetween": 8
+              },
+              "500": {
+                "spaceBetween": 16
+              },
+              "768": {
+                "slidesPerView": 3,
+                "spaceBetween": 24
+              }
+            }
+          }'>
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Embarcacion/1.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Embarcacion/2.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Embarcacion/4.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Embarcacion/5.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Embarcacion/6.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Embarcacion/7.png" alt="Gallery image" class="rounded-4">
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide">
+                <img src="assets/img/paradise/img/Embarcacion/3.png" alt="Gallery image" class="rounded-4">
+              </div>
+            </div>
+          </div>
+
+          
+      </section>
+
+      <!-- Video 
+      <section class="container text-center pb-5 mb-3 mb-md-4 mb-lg-5">
+        <h2 class="h1 pt-1 mb-4">See What Makes Us Different</h2>
+        <div class="row justify-content-center mb-md-2 mb-lg-5">
+          <div class="col-lg-6 col-md-8">
+            <p class="fs-lg text-muted mb-lg-0">Your best care begins here. Hurry up to get top health care quality from leading doctors of the world.</p>
+          </div>
+        </div>
+        <div class="position-relative rounded-3 overflow-hidden mb-lg-3">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center zindex-5">
+            <a href="https://www.youtube.com/watch?v=wJC1LFT_GD0" class="btn btn-video btn-icon btn-xl stretched-link bg-white" data-bs-toggle="video" aria-label="Play video">
+              <i class="bx bx-play"></i>
+            </a>
+          </div>
+          <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
+          <img src="assets/img/landing/medical/video-cover.jpg" alt="Cover image">
+        </div>
+      </section>
+
+      -->
+
+      <!-- Questions -->
+      <section id="questions" class="container mb-5 pb-2 pb-md-4 pb-lg-5">
+        <div class="card border-0 bg-secondary p-md-5 px-sm-2 pt-4 pb-3">
+          <div class="card-body mx-auto" style="max-width: 860px;">
+            <h2 class="h1 mb-4 text-center">Preguntas Frecuentes</h2>
+            <p class="mb-4 pb-3 fs-lg text-center ">Nuestra intención es que este informado del proceso, es por eso que diseñamos este apartado para que tengas la mayor información posible a tu alcance.</p>
+
+            <!-- Accordion: Alternative style -->
+            <div class="accordion" id="accordion-services">
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-1">
+                  <button class="accordion-button fs-xl shadow-none rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Como puedo realizar mi reservación</button>
+                </h3>
+                <div class="accordion-collapse collapse show" id="collapse-1" aria-labelledby="heading-1" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/paradise/img/preguntas/1.png" width="200" alt="Digital Marketing" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0 ">Primero deberas de ponerte en contacto con nosotros llenando el <a class="text-decoration-none" href="#contact">formulario</a> situado en la parte inferior de este sitio web o tambien puedes <strong>llamarnos o enviar</strong> un Whatsapp al <a class="text-decoration-none" href="https://wa.link/ryg754">669-1160244</a> para poder verificar la disponibilidad de la fecha y turno requerido, contamos con dos horarios de 8 am a 1 pm y de 2 pm a 7 pm el paseo dura alrededor de 5 horas, el costo del paseo es de <strong>$ 9,000 mxn.</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-2">
+                  <button class="accordion-button fs-xl shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">Que cantidad se requiere para que mi paseo quede apartado?</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="collapse-2" aria-labelledby="heading-2" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/paradise/img/preguntas/2.png" width="200" alt="Web Development" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0">Primero deberemos confirmar la disponibilidad de la fecha y turno, una vez confirmada la disponibilidad te requeriremos los siguientes datos: nombre completo, telefono, correo eléctronico, despues procederemos a realizar el pago para apartar la fecha y turno cubriendo la cantidad de $2,000 mxn, el cual puedes realizar mediante pago en efectivo en la ubicación de la embarcacíon (Muelle 9, P° de la Isla 2219, La Marina, Mazatlán, Sinaloa, CP. 82103 ) o mediante deposito o transferencia bancaria, en este caso deberas de enviar el comprobante de pago por Whatsapp al numero 669-1160244 o al Correo electronico atencion@paradise.com, el resto ($7,000 mxn) deberan de cubrirse al subir a la embarcacíon</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-3">
+                  <button class="accordion-button fs-xl shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">Como puedo cancelar mi paseo si ya pague mi reservación?</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="collapse-3" aria-labelledby="heading-3" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/paradise/img/preguntas/3.png" width="200" alt="Application Development" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0">Para poder hacer valida la cancelación y devolución de la reservación nos deberas de notificar al menos con 24hrs de anticipación con respecto a la hora de salida del paseo, de lo contrario no se realizará el reembolso.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header" id="heading-4">
+                  <button class="accordion-button fs-xl shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">El paseo incluye comida y bebida?</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="collapse-4" aria-labelledby="heading-4" data-bs-parent="#accordion-services">
+                  <div class="accordion-body pt-0">
+                    <div class="d-flex flex-md-row flex-column align-items-md-center">
+                      <img src="assets/img/paradise/img/preguntas/4.png" width="200" alt="Strategy" class="me-md-4 mb-md-0 mb-3">
+                      <div class="ps-md-3">
+                        <p class="mb-0">No, pero contamos con hieleras y espacio suficiente para que puedas subir tus alimentos, en el caso de las bebidas no puedes subir botellas de vidrio por motivos de seguridad.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Testimonials slider -->
+      <section id="clients" class="container mb-5 pt-2 pb-3 py-md-4 py-lg-5">
+        <h2 class="h1 pb-2 pb-lg-0 mb-4 mb-lg-5 text-center">Nuestros clientes</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card border-0 shadow-sm p-4 p-xxl-5 mb-4 me-xxl-4">
+
+              <!-- Quotation mark -->
+              <div class="pb-4 mb-2">
+                <span class="btn btn-icon btn-info btn-lg shadow-info pe-none">
+                  <i class="bx bxs-quote-left"></i>
+                </span>
+              </div>
+
+              <!-- Slider -->
+              <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
+                "spaceBetween": 24,
+                "pager": true,
+                "loop": true,
+                "tabs": true,
+                "navigation": {
+                  "prevEl": ".page-prev",
+                  "nextEl": ".page-next"
+                }
+              }'>
+                <div class="swiper-wrapper">
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto" data-swiper-tab="#author-1">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">Hace poco fui y quede fascinada, el personal muy atento y servicial. cuentan con equipo para realizar todo tipo de actividades en la playa, vale mucho la pena la experiencia, se los recomiendo!!🥳
+                        </p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                        <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
+                          <img src="assets/img/paradise/img/testi/3.png" width="48" class="rounded-circle" alt="">
+                          <div class="ps-3">
+                            <h5 class="fw-semibold lh-base mb-0">Jessica Rojas</h5>
+                            <span class="fs-sm text-muted">⭐️⭐️⭐️⭐️⭐️</span>
+                          </div>
+                        </div>
+                        <img src="assets/img/paradise/img/facebook-circle-logo-24.png" width="60" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="Company logo">
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto" data-swiper-tab="#author-2">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">Tenía tiempo que quería vísitar Mazatlán, y vaya que hermoso es ver el atardecer desde isla venados, una experiencia unica, que volveré a repertirla, el personal siempre estuvo al pendiente de los que se nos ofreciera, a mis amigos y a mi nos tratraron como reyes, recomendadisimo!! 🥳.</p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                        <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
+                          <img src="assets/img/paradise/img/testi/2.png" width="48" class="rounded-circle" alt="Annette Black">
+                          <div class="ps-3">
+                            <h5 class="fw-semibold lh-base mb-0">Rosa Ledezma</h5>
+                            <span class="fs-sm text-muted">⭐️⭐️⭐️⭐️</span>
+                          </div>
+                        </div>
+                        <img src="assets/img/paradise/img/facebook-circle-logo-24.png" width="60" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="Company logo">
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto" data-swiper-tab="#author-3">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">La mejor experiencia, personal muy amable y atento, mis amigas y yo nos las pasamos de lo mejor, ver el atardecer en Mazatlán en playa venados fue una de las mejores experiencias, valío la pena el paseo.🫶🏼</p>
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
+                        <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
+                          <img src="assets/img/paradise/img/testi/1.png" width="48" class="rounded-circle" alt="Darrell Steward">
+                          <div class="ps-3">
+                            <h5 class="fw-semibold lh-base mb-0">Sara Ochoa</h5>
+                            <span class="fs-sm text-muted">⭐️⭐️⭐️⭐️⭐️</span>
+                          </div>
+                        </div>
+                        <img src="assets/img/paradise/img/facebook-circle-logo-24.png" width="60" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="Company logo">
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination (Pager) -->
+            <nav class="pagination d-flex justify-content-center justify-content-md-start">
+              <div class="page-item me-2">
+                <a class="page-link page-prev btn-icon btn-sm" href="#" aria-label="Previous">
+                  <i class="bx bx-chevron-left"></i>
+                </a>
+              </div>
+              <ul class="list-unstyled d-flex justify-content-center w-auto mb-0"></ul>
+              <div class="page-item ms-2">
+                <a class="page-link page-next btn-icon btn-sm" href="#" aria-label="Next">
+                  <i class="bx bx-chevron-right"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-4 d-none d-md-block">
+
+            <!-- Swiper tabs (Author images) -->
+            <div class="swiper-tabs">
+
+              <!-- Author image 1 -->
+              <div id="author-1" class="card bg-transparent border-0 swiper-tab active">
+                <div class="card-body p-0 rounded-3 bg-size-cover bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/paradise/img/testi/3.png);"></div>
+                <div class="card-footer d-flex w-100 border-0 pb-0">
+                  <img src="assets/img/paradise/img/facebook-circle-logo-24.png" width="80" class="d-none d-xl-block" alt="Company logo">
+                  <div class="border-start-xl ps-xl-4 ms-xl-2">
+                    <h5 class="fw-semibold lh-base mb-0">Ralph Edwards</h5>
+                    <span class="fs-sm text-muted">⭐️⭐️⭐️⭐️⭐️<span class="d-xl-none d-inline">at Lorem Ltd.</span></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Author image 2 -->
+              <div id="author-2" class="card bg-transparent border-0 swiper-tab">
+                <div class="card-body p-0 rounded-3 bg-size-cover bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/paradise/img/testi/2.png);"></div>
+                <div class="card-footer d-flex w-100 border-0 pb-0">
+                  <img src="assets/img/paradise/img/facebook-circle-logo-24.png" width="80" class="d-none d-xl-block" alt="Company logo">
+                  <div class="border-start-xl ps-xl-4 ms-xl-2">
+                    <h5 class="fw-semibold lh-base mb-0">Annette Black</h5>
+                    <span class="fs-sm text-muted">⭐️⭐️⭐️⭐️<span class="d-xl-none d-inline">at Company LLC</span></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Author image 3 -->
+              <div id="author-3" class="card bg-transparent border-0 swiper-tab">
+                <div class="card-body p-0 rounded-3 bg-size-cover bg-repeat-0 bg-position-top-center" style="background-image: url(assets/img/paradise/img/testi/1.png);"></div>
+                <div class="card-footer d-flex w-100 border-0 pb-0">
+                  <img src="assets/img/paradise/img/facebook-circle-logo-24.png" width="80" class="d-none d-xl-block" alt="Company logo">
+                  <div class="border-start-xl ps-xl-4 ms-xl-2">
+                    <h5 class="fw-semibold lh-base mb-0">Sara Ochoa</h5>
+                    <span class="fs-sm text-muted">⭐️⭐️⭐️⭐️⭐️<span class="d-xl-none d-inline">at Ipsum Ltd.</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ready -->
+      <section class="container mb-5 pb-lg-5 pt-2 pt-md-4">
+        <h2 class="h1 d-md-inline-block position-relative mb-md-5 mb-4 text-md-start text-center">
+          Estas Listo para
+
+          <!-- Arrow shape -->
+          <span class="d-md-block d-none position-absolute top-0 start-100 text-primary ms-4" style="width: 84px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="76" fill="currentColor"><path d="M52.873 59.368c9.856-.312 19.56 1.721 29.317 1.568.935-.074 2.084-1.013 1.722-2.019-3.406-9.705-9.025-18.368-14.874-26.844-.621-.948-2.116-.34-1.754.666-2.829 2.54-2.639 9.432-2.154 13.403-5.592 2.345-10.045 5.522-13.544 10.524-.703 1.11.064 2.705 1.287 2.702zm15.683-12.501c-.656-3.524.486-6.908.824-10.248 3.96 6.725 7.79 13.479 10.542 20.883-7.915-.124-15.674-1.371-23.618-1.625 3.071-3.274 6.922-5.5 11.278-7.295.935-.074 1.149-.938.974-1.715zm-39.5 1.536l25.888-5.82c1.294-.291 1.622-1.86.871-2.779-5.053-6.751-10.236-13.472-15.089-20.54-.592-.819-1.598-.457-1.841.278-.563-.689-1.958-.24-1.725.796.73 4.459 1.908 9.09.451 13.497-1.486 4.278-6.874 7.529-10.379 10.084-.819.592-.615 1.498-.081 2.058-.414 1.181.352 2.776 1.906 2.427zm11.493-13.598c1.774-4.206.005-9.656-1.243-13.999 3.542 6.682 7.932 12.903 12.423 18.964l-19.804 4.453c3.534-2.426 6.952-5.37 8.625-9.418zM7.077 38.931c8.313-1.733 16.584-3.049 24.39-6.435 1.107-.521 1.175-2.032.453-2.822-5.021-5.398-9.712-11.143-15.093-16.324-.346-.33-.764-.372-1.152-.285-.463-.848-2.116-.34-1.754.666 1.028 2.76.992 5.624 1.086 8.459.122 2.964.064 2.705-2.075 4.682-2.369 2.165-5.699 5.497-7.159 8.681-1.537 1.025-.768 3.844 1.303 3.378zm10.806-11.813c.46-.375.602-.951.486-1.469-.711-2.559-.805-5.394-1.257-8.012 3.407 4.266 6.972 8.631 10.608 12.709-5.492 2.186-11.375 3.237-17.228 4.417.201-.317.531-.663.732-.98 1.864-2.595 4.075-4.86 6.66-6.665z"/></svg>
+          </span>
+        </h2>
+        <img src="assets/img/paradise/img/cover.png" alt="Team cover" class="rounded-3">
+      </section>
+
+      <!-- Contact form -->
+      <section id="contact" class="position-relative bg-secondary pt-5">
+        <div class="container position-relative zindex-2 pt-5">
+          <div class="row">
+
+            <!-- Contact links -->
+            <div class="col-xl-4 col-lg-5 pb-4 pb-sm-5 mb-2 mb-sm-0">
+              <div class="pe-lg-4 pe-xl-0">
+                <h1 class="pb-3 pb-md-4 mb-lg-5">Contacto</h1>
+                <div class="d-flex align-items-start pb-3 mb-sm-1 mb-md-3">
+                  <div class="bg-light text-info rounded-circle flex-shrink-0 fs-3 lh-1 p-3">
+                    <i class="bx bx-phone"></i>
+                  </div>
+                  <div class="ps-3 ps-sm-4">
+                    <h2 class="h4 pb-1 mb-2">Llamanos</h2>
+                    <p class="mb-2">Si lo deseas puede realizar una llamada para enviarte información sobre disponibilidad.</p>
+                    <div class="pt-2">
+                      <a href="tel:+526691160244" class="btn btn-info shadow-info btn-lg">Llamar ahora</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start">
+                  <div class="bg-light text-success rounded-circle flex-shrink-0 fs-3 lh-1 p-3">
+                    <i class='bx bxl-whatsapp'></i>
+                  </div>
+                  <div class="ps-3 ps-sm-4">
+                    <h2 class="h4 pb-1 mb-2">Whatsapp</h2>
+                    <p class="mb-2">Envianos un mensaje de texto con la palabra información y en breve te atenderemos.</p>
+                    <div class="pt-2">
+                      <a href="https://wa.link/ryg754" target="_blank" class="btn btn-success shadow-success btn-lg">Enviar Mensaje</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact form -->
+            
+            <div class="col-xl-6 col-lg-7 offset-xl-2">
+              <div class="card border-light shadow-lg py-3 p-sm-4 p-md-5">
+                <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 rounded-3 d-none d-dark-mode-block"></div>
+                <div class="card-body position-relative zindex-2">
+                  <h2 class="card-title pb-3 mb-1">Reservación</h2>
+                  <p class="mb-2">Favor de llenar el formulario para consultar disponibilidad y en brevé nos pondremos en contacto</p>
+                  <form action="https://formsubmit.co/julio.calderon.100@gmail.com" method="POST" class="row g-4">
+
+                    <div class="col-6">
+                      <label for="name" class="form-label fs-base">Nombre</label>
+                      <input type="text" name="Nombre" placeholder="Nombre" class="form-control form-control-lg" id="name" required>
+                      <div class="invalid-feedback">Por favor ingrese un nombre válido!</div>
+                    </div>
+                    <div class="col-6">
+                      <label for="name" class="form-label fs-base">Apellido</label>
+                      <input type="text" name="Apellido" placeholder="Apellido" class="form-control form-control-lg" id="name" required>
+                      <div class="invalid-feedback">Por favor ingrese un nombre válido!</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="email" class="form-label fs-base">Correo eléctronico</label>
+                      <input type="text" name="Email" placeholder="Email" class="form-control form-control-lg" id="email" required>
+                      <div class="invalid-feedback">Por favor ingrese un correo válido!</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="number" class="form-label fs-base">Télefono movil</label>
+                      <input type="number" name="Telefono" placeholder="Celular" class="form-control form-control-lg" id="number" required>
+                      <div class="invalid-feedback">Por favor ingrese un telefono válido!</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="number" class="form-label fs-base">Número de Personas</label>
+                      <input type="number" name="No de Personas" placeholder="Max 25" class="form-control form-control-lg" id="number" required>
+                      <div class="invalid-feedback">Por favor ingrese un numero válido!</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="specialist" class="form-label fs-base">Horario</label>
+                      <select class="form-select form-select-lg" name="Horario" id="specialist" required>
+                        <option value="" selected disabled>Elige un turno</option>
+                        <option value="De 9:00 am a 1:00 pm">De 9:00 am a 1:00 pm</option>
+                        <option value="De 2:00 pm a 7:00 pm">De 2:00 pm a 7:00 pm</option>
+                        <option value="De 9:00 am a 7:00 pm">De 9:00 am a 7:00 pm</option>
+                      </select>
+                      <div class="invalid-feedback">Elige un horario válido!</div>
+                    </div>
+                    <div class="col-sm-12">
+                      <label for="date" class="form-label fs-base">Fecha</label>
+                      <input type="date" name="Fecha" value="fecha" class="form-control form-control-lg" id="date" data-format='{"date": true, "datePattern": ["m", "d"]}' placeholder="mm/dd" required>
+                      <div class="invalid-feedback">Ingresa una fecha!</div>
+                    </div>
+                    <div class="col-12 pt-2 pt-sm-3">
+                      <button type="submit" class="btn btn-lg btn-info w-100 w-sm-auto">Consultar disponibilidad</button>
+                    </div>
+
+                    <input type="hidden" name="_next" value="http://www.paradisemazatlan.com/email.html">
+
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <input type="hidden" name="_template" value="box">
+                  
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute bottom-0 start-0 w-100 bg-light" style="height: 8rem;"></div>
+      </section>
+
+
+      <!-- Map & Adress -->
+      <section id="location" class="container py-2 py-lg-4 py-xl-5 mb-2 mb-md-3">
+        <div class="row py-5">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="d-flex flex-column h-100 shadow-sm rounded-3 overflow-hidden">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11945.301632701727!2d-106.46067688078637!3d23.2704423261107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1706936568042!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <h2 class="h4 mb-4">Ubicación</h2>
+            <ul class="list-unstyled pb-2 pb-lg-0 mb-4 mb-lg-5">
+              <li class="d-flex pb-1 mb-2">
+                <i class="bx bx-map text-primary fs-xl me-2" style="margin-top: .125rem;"></i>
+                P° de la Isla 2219, La Marina, Mazatlán, Sinaloa, CP. 82103
+              </li>
+              <li class="d-flex pb-1 mb-2">
+                <i class="bx bx-phone-call text-primary fs-xl me-2" style="margin-top: .125rem;"></i>
+                (669) 116-0244 - (669) 274-9464 
+              </li>
+              <li class="d-flex">
+                <i class="bx bx-time-five text-primary fs-xl me-2" style="margin-top: .125rem;"></i>
+                <div>
+                  <strong class="text-nav">Lun - Dom</strong>: 7:00 am - 8:00 pm
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex pt-1 pt-md-3 pt-xl-4">
+              <a href="https://www.facebook.com/profile.php?id=100070095075479" class="btn btn-icon btn-secondary btn-facebook me-3" aria-label="Facebook">
+                <i class="bx bxl-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/paradisetrimaran/" class="btn btn-icon btn-secondary btn-instagram me-3" aria-label="Instagram">
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a href="https://wa.link/ryg754" class="btn btn-icon btn-secondary btn-whatsapp me-3" aria-label="Whatsapp">
+                <i class="bx bxl-whatsapp"></i>
+              </a>
+        
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="position-relative pt-1 pb-3" style="background-color: #151922;" data-bs-theme="dark">
+
+        <!-- Content -->
+        <div class="container position-relative zindex-2 pt-0 pb-0 pb-md-0">
+          
+          <div class="row justify-content-center pt-0 mt-3">
+            <div class="text-center">
+              <p class="text-body fs-lg pb-0 mb-0">Sitio web creado por 🧑🏻‍💻 <a class="text-decoration-none" href="http://www.iweb.com.mx">iWEB | Studio</a> by JC </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    
+
+    <!-- Back to top button -->
+    <a href="#hero" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Volver arriba</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- Smooth Scroll -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    });
+    </script>
+  </body>
+</html>
